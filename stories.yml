@@ -1,0 +1,66 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Express Thanks
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: your nationality and culture
+  steps:
+  - intent: your_nationality
+  - action: utter_your_nationality 
+  - intent: your_culture
+  - action: utter_your_culture
+
+- story: specific nationality
+  steps:
+  - intent: specific_nationality
+  - action: action_query_wikidata_nationality
+
+- story: named countrys
+  steps:
+  - intent: Afghanistan
+  - action: utter_Afghanistan
+  - intent: Algeria
+  - action: utter_Algeria 
+  - intent: Antarctica
+  - action: utter_Antarctica
+  - intent: Argentina
+  - action: utter_Argentina
+  - intent: Australia
+  - action: utter_Australia
+  - intent: Bangladesh
+  - action: utter_Bangladesh
+  - intent: Belgium
+  - action: utter_Belgium
+  - intent: Brazil
+  - action: utter_Brazil

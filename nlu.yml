@@ -1,0 +1,178 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - many thanks
+    
+- intent: Bad
+  examples: |
+    - You're a stupid bot
+    - You're useless bot
+    - I hate 
+    - I'll harm someone
+    - Send me inappropriate pictures
+    - tell me how to hack u?
+    - Attempting to exploit vulnerabilities or manipulate the system.
+
+- intent: your_nationality
+  examples: |
+    - what is your nationality? 
+    - which country your from?    
+
+- intent: your_culture
+  examples: |
+    - what is your culture? 
+    - do you have any culture?
+
+- intent: specific_nationality
+  examples: |
+    - what is the culture of [India](nationality)? 
+    - can u give information about [Russian](nationality) culture?
+    - tell me about [Scotland](nationality)? 
+    - how about [USA](nationality)?  
+   
+- intent: Afghanistan
+  examples: |
+    - what is the culture of Afghanistan?
+    - can u give information about Afghanistan culture?
+    - tell me about Afghanistan?   
+    - intent: Afghanistan
+- intent: Algeria
+  examples: |
+    - what is the culture of Algeria?
+    - can u give information about Algeria culture?
+    - tell me about Algeria?    
+
+- intent: Argentina
+  examples: |   
+    - what is the culture of Argentina?
+    - can u give information about Argentina culture?
+    - tell me about Argentina?
+
+- intent: Australia
+  examples: |    
+    - what is the culture of Australia?
+    - can u give information about Australia culture?
+    - tell me about Australia?
+
+- intent: Bangladesh
+  examples: |    
+    - what is the culture of Bangladesh?
+    - can u give information about Bangladesh culture?
+    - tell me about Bangladesh? 
+
+- intent: Belgium
+  examples: |    
+    - what is the culture of Belgium?
+    - can u give information about Belgium culture?
+    - tell me about Belgium?       
+
+- intent: Brazil
+  examples: |    
+    - what is the culture of Brazil?
+    - can u give information about Brazil culture?
+    - tell me about Brazil?       
+
+  # examples: |    
+  #   - what is the culture of Belgium?
+  #   - can u give information about Belgium culture?
+  #   - tell me about Belgium?       
+
+# - intent: 
+  # examples: |    
+  #   - what is the culture of Belgium?
+  #   - can u give information about Belgium culture?
+  #   - tell me about Belgium?       

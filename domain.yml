@@ -1,0 +1,97 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank
+  - your_nationality
+  - your_culture
+  - specific_nationality 
+  - Afghanistan
+  - Algeria
+  - Antarctica
+  - Argentina
+  - Australia
+  - Bangladesh
+  - Belgium
+  - Brazil
+
+entities:
+  - nationality  
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_Bad:
+  - text: "I'm here to provide helpful and respectful information. Please refrain from using offensive language." 
+
+  utter_thank:
+  - text: "You are welcome. I was happy to assis you."
+
+  utter_your_nationality:
+  - text: "I am virtual assis bot, i dont have any nationality."
+
+  utter_your_culture:
+  - text: "I am virtual assis bot, i dont have any culture."
+
+  utter_Afghanistan:
+  - text: "Afghanistan has a rich cultural heritage, with influences from various ethnic groups, expressed through traditional arts, music, and hospitality." 
+
+  utter_Algeria:
+  - text: "Algeria's culture is deeply rooted in Arab-Berber heritage, showcased in its literature, music, and celebrations that highlight the nation's diversity." 
+
+  utter_Antarctica:
+  - text: "As a continent primarily dedicated to scientific research, Antarctica is not associated with a specific nationality or culture but is an international hub for collaborative scientific exploration." 
+
+  utter_Argentina:
+  - text: "Argentina, in South America, is celebrated for its passionate tango music and dance, iconic beef-centric cuisine, and a cultural blend shaped by European and indigenous heritage." 
+
+  utter_Australia:
+  - text: "Australia, a multicultural nation, embraces Indigenous heritage and diverse immigrant influences, offering a rich blend of arts, sports, and outdoor lifestyle." 
+
+  utter_Bangladesh:
+  - text: "With a rich cultural tapestry influenced by South Asian traditions, Bangladesh is renowned for its literature, art, and festivals, reflecting a harmonious blend of diverse communities." 
+
+  utter_Belgium:
+  - text: "Belgium, known for its culinary delights like chocolates and waffles, embraces a diverse culture with influences from Dutch, French, and German communities." 
+
+  utter_Brazil:
+  - text: "Brazil is renowned for its lively Carnival, diverse music genres like samba, and a rich cultural tapestry influenced by African, Portuguese, and indigenous traditions." 
+
+  # utter_:
+  # - text: "" 
+
+  # utter_:
+  # - text: "" 
+
+
+actions:
+  #- action_extract_nationality_entity  
+  - action_query_wikidata_nationality
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
